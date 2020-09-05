@@ -1,5 +1,22 @@
-# Follow this tutorial: https://betweentwoparens.com/jenv
-## STEP BY STEP
+
+# *** Follow this tutorial: https://medium.com/@chamikakasun/how-to-manage-multiple-java-version-in-macos-e5421345f6d0
+## Add java JDK using brew
+- ### Get lastest java jdk version
+
+        brew cask install java
+
+- ### Get older java JDK version
+
+        brew cask install AdoptOpenJDK/openjdk/adoptopenjdk{8,11}
+
+- ### Check folder install
+
+        /usr/libexec/java_home -V
+
+
+-----------------------------------------------------------
+# *** Follow this tutorial: https://betweentwoparens.com/jenv
+## Control java sdk version using Jenv
 - ### Installing jEnv
 
         brew install jenv
@@ -70,6 +87,10 @@
         openjdk64-13.0.2 added
         13.0.2 added
         13.0 added
+    
+    check jenv version
+
+        jenv versions
 
 - ### Set a JDK version via jEnv
     There are two options for this: ```jenv local``` and ```jenv global```.
@@ -92,5 +113,5 @@
         brew uninstall jenv
     
     Remove the .jenv directory
-    
+
         rm -rf ~/.jenv
